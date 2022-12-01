@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.Switch;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,20 +32,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-            image.setOnClickListener(new View.OnClickListener() {
+        image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MainActivity.this, Form.class);
                     startActivity(intent);
                 }
-            });
-
-
-
-
+        });
 
     }
 }
